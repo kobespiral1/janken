@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <meta charset="UTF-8">
+  <title>じゃんけん結果</title>
+</head>
+
+<body>
+  <h1>じゃんけん結果</h1>
+  <div th:object="${VsComputerForm}">
+    <p>あなたの手は<span th:text="*{userHand}"></span></p>
+    <p>コンピューターの手は<span th:text="*{computerHand}"></span></p>
+    <h4 th:text="*{resultText}"></h4>
+  </div>
+</body>
