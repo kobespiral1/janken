@@ -7,18 +7,25 @@
 </head>
 
 <body>
-  <form action="/vscomputer/result" method="post">
-    <input type="hidden" name="hand" value="1">
-    <input type="submit" value="グー" name="button">
-  </form>
-  <form action="/vscomputer/result" method="post">
-    <input type="hidden" name="hand" value="2">
-    <input type="submit" value="チョキ" name="button">
-  </form>
-  <form action="/vscomputer/result" method="post">
-    <input type="hidden" name="hand" value="3">
-    <input type="submit" value="パー" name="button">
-  </form>
+  <h1>コンピューターとじゃんけん！！！！</h1>
+  <h3>好きな手を選んでね！</h3>
+  <div style="display: flex;justify-content: space-around;">
+    <form action="/vscomputer/result" method="post">
+      <input type="hidden" name="hand" value="1">
+      <button type="submit" value="グー" name="button"><img style=" width: 160px"
+        src="https://2.bp.blogspot.com/-VhlO-Yfjy_E/Uab3z3RNJQI/AAAAAAAAUVg/fX8VnSVDlWs/s800/janken_gu.png"></button>
+    </form>
+    <form action="/vscomputer/result" method="post">
+      <input type="hidden" name="hand" value="2">
+      <button type="submit" value="チョキ" name="button"><img style=" width: 160px"
+        src="https://4.bp.blogspot.com/-__yEIXe5SxU/Uab3zO7BB2I/AAAAAAAAUVI/MYg6TVeiv-Y/s800/janken_choki.png"></button>
+    </form>
+    <form action="/vscomputer/result" method="post">
+      <input type="hidden" name="hand" value="3">
+      <button type="submit" value="パー" name="button"><img style=" width: 160px"
+        src="https://3.bp.blogspot.com/-qZtyoue9xKs/Uab30IG0Q5I/AAAAAAAAUVk/qnH8a2OgrvI/s800/janken_pa.png"></button>
+    </form>
+  </div>
 </body>
 
 </html>
